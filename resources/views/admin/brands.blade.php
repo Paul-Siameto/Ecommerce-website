@@ -97,7 +97,7 @@
 
 @push('scripts')
     <script>
-        $(function) {
+        $(function() {
             $('.delete').on('click',function(e){
                 e.preventDefault();
                 var form = $(this).closest('form');
@@ -113,6 +113,6 @@
                     }
                 })
             });
-        }
+        });
     </script>
 @endpush
