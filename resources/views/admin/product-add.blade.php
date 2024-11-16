@@ -230,10 +230,11 @@
             $("#gFile").on("change",function(e){
                 const photoInp = $("#gFile");
                 const gphotos = this.files;
-                $.each($photos,function(key,val){
+                $.each(gphotos,function(key,val){
                     $("#galUpload").prepend(`<div class="item gitems"><img scr="${URL.createObjectURL(val)}" /></div>`);
-                });
+                    
             });
+        });
 
             $("input[name='name']").on("change",function(){
                 $("input[name='slug']").val(StringToSlug($(this).val()));
@@ -246,6 +247,7 @@
             .replace(/[^\w ]+/g,"")
             .replace(/ +/g,"-");
         }
+    
     </script>
     
 @endpush
