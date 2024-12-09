@@ -72,7 +72,7 @@
                             <td>ksh{{$product->sale_price}}</td>
                             <td>{{$product->SKU}}</td>
                             <td>{{$product->category->name}}</td>
-                            <td>{{$product->brand->name}}</td>
+                            <td>{{$product->brand->name ?? 'None'}}</td>
                             <td>{{$product->featured == 0 ? "No":"Yes"}}</td>
                             <td>{{$product->stock_status}}</td>
                             <td>{{$product->quantity}}</td>
