@@ -154,12 +154,6 @@ class ProductsController extends Controller
 
         $current_timestamp = Carbon::now()->timestamp;
 
-        $product = Product::find($request->id);
-
-        $gallery_arr = array();
-        $gallery_images = "";
-        $counter = 1;
-
         if($request->hasFile('image'))
         {
 
@@ -176,6 +170,10 @@ class ProductsController extends Controller
             $this->GenerateProductThumbnailImage($image,$imageName);
             $product->image = $imageName;
         }
+
+        $gallery_arr = array();
+        $gallery_images = "";
+        $counter = 1;
 
         
         if($request->hasFile('images'))
