@@ -30,7 +30,7 @@
                             </div>
                             <div>
                                 <div class="body-text mb-2">Total Amount</div>
-                                <h4>481.34</h4>
+                                <h4>481.54</h4>
                             </div>
                         </div>
                     </div>
