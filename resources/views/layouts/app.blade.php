@@ -485,7 +485,7 @@
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="#icon_heart" />
             </svg>
-            @if(Cart::instance('wishlist')->content()->where('id',$product->id)->count()>0)
+            @if(Cart::instance('wishlist')->content()->count()>0)
             <span class="wishlist-amount d-block position-absolute js-wishlist-items-count">{{Cart::instance('wishlist')->content()->count()}}</span>
             @endif
           </a>
